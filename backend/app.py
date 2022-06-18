@@ -11,6 +11,9 @@ from consts import DEFAULT_IMG_OUTPUT_DIR
 from utils import parse_arg_boolean, parse_arg_dalle_version
 from consts import ModelSize
 
+# from iree import runtime as rt
+# rt.flags.parse_flags("--task_topology_group_count=8")
+
 app = Flask(__name__)
 CORS(app)
 print("--> Starting DALL-E Server. This might take up to two minutes.")
@@ -63,7 +66,7 @@ def health_check():
 
 with app.app_context():
     dalle_model = DalleModel(args.model_version)
-    dalle_model.generate_images("warm-up", 1)
+    # dalle_model.generate_images("warm-up", 1)
     print("--> DALL-E Server is up and running!")
     print(f"--> Model selected - DALL-E {args.model_version}")
 

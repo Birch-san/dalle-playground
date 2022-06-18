@@ -1,0 +1,99 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: app.py IREE/Vulkan",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/app.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--port", "8080",
+        "--model_version", "Mega_full"
+      ],
+      "env": {
+        "JAX_PLATFORMS":"iree",
+        "JAX_IREE_BACKEND":"vulkan"
+      }
+    },
+    {
+      "name": "Python: app.py IREE/Vulkan 8081",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/app.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--port", "8080",
+        "--model_version", "Mega_full"
+      ],
+      "env": {
+        "JAX_PLATFORMS":"iree",
+        "JAX_IREE_BACKEND":"vulkan"
+      }
+    },
+    {
+      "name": "Python: app.py CPU",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/app.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        // "JAX_PLATFORMS":"iree"
+      },
+      "args": [
+        "--port", "8080",
+        "--model_version", "Mega_full"
+      ]
+    },
+    {
+      "name": "Python: app.py CPU 8081",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/app.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "--port", "8081",
+        "--model_version", "Mega_full"
+      ]
+    },
+    {
+      "name": "Python: repro.py",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/repro.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        // "JAX_PLATFORMS":"iree",
+        // "JAX_IREE_BACKEND":"vulkan"
+      },
+      "args": []
+    },
+    {
+      "name": "Python: cpu_repro.py",
+      "type": "python",
+      "request": "launch",
+      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "program": "${workspaceFolder}/backend/cpu_repro.py",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        // "JAX_PLATFORMS":"iree",
+        // "JAX_IREE_BACKEND":"vulkan"
+      },
+      "args": []
+    }
+  ]
+}
