@@ -17,7 +17,8 @@
         "--model_version", "Mega_full"
       ],
       "env": {
-        "JAX_PLATFORMS":"iree",
+        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        "JAX_PLATFORMS":"iree,cpu",
         "JAX_IREE_BACKEND":"vulkan"
       }
     },
@@ -34,7 +35,8 @@
         "--model_version", "Mega_full"
       ],
       "env": {
-        "JAX_PLATFORMS":"iree",
+        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        "JAX_PLATFORMS":"iree,cpu",
         "JAX_IREE_BACKEND":"vulkan"
       }
     },
@@ -47,7 +49,8 @@
       "console": "integratedTerminal",
       "justMyCode": true,
       "env": {
-        // "JAX_PLATFORMS":"iree"
+        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        // "JAX_PLATFORMS":"ire,cpue"
       },
       "args": [
         "--port", "8080",
@@ -76,22 +79,8 @@
       "console": "integratedTerminal",
       "justMyCode": true,
       "env": {
-        // "JAX_PLATFORMS":"iree",
-        // "JAX_IREE_BACKEND":"vulkan"
-      },
-      "args": []
-    },
-    {
-      "name": "Python: cpu_repro.py",
-      "type": "python",
-      "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
-      "program": "${workspaceFolder}/backend/cpu_repro.py",
-      "console": "integratedTerminal",
-      "justMyCode": true,
-      "env": {
-        // "JAX_PLATFORMS":"iree",
-        // "JAX_IREE_BACKEND":"vulkan"
+        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        // "PATH": "/Users/birch/git/mlir-hlo/llvm-build/bin:/Users/birch/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/Users/birch/anaconda3/envs/torch-nightly/bin:/Users/birch/anaconda3/condabin:/Users/birch/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Users/birch/.npm-packages/bin"
       },
       "args": []
     }

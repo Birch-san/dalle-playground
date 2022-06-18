@@ -11,8 +11,8 @@ from consts import DEFAULT_IMG_OUTPUT_DIR
 from utils import parse_arg_boolean, parse_arg_dalle_version
 from consts import ModelSize
 
-# from iree import runtime as rt
-# rt.flags.parse_flags("--task_topology_group_count=8")
+from iree import runtime as rt
+rt.flags.parse_flags("--task_topology_group_count=8")
 
 app = Flask(__name__)
 CORS(app)
