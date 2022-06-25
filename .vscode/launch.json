@@ -8,16 +8,16 @@
       "name": "Python: app.py IREE/Vulkan",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/app.py",
       "console": "integratedTerminal",
-      "justMyCode": true,
+      "justMyCode": false,
       "args": [
         "--port", "8080",
         "--model_version", "Mega_full"
       ],
       "env": {
-        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        // "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
         "JAX_PLATFORMS":"iree,cpu",
         "JAX_IREE_BACKEND":"vulkan"
       }
@@ -26,17 +26,17 @@
       "name": "Python: app.py IREE/Vulkan 8081",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/app.py",
       "console": "integratedTerminal",
-      "justMyCode": true,
+      "justMyCode": false,
       "args": [
         "--port", "8080",
         "--model_version", "Mega_full"
       ],
       "env": {
-        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
-        "JAX_PLATFORMS":"iree,cpu",
+        // "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        "JAX_PLATFORMS":"iree",
         "JAX_IREE_BACKEND":"vulkan"
       }
     },
@@ -44,12 +44,12 @@
       "name": "Python: app.py CPU",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/app.py",
       "console": "integratedTerminal",
       "justMyCode": true,
       "env": {
-        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        // "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
         // "JAX_PLATFORMS":"ire,cpue"
       },
       "args": [
@@ -61,7 +61,7 @@
       "name": "Python: app.py CPU 8081",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/app.py",
       "console": "integratedTerminal",
       "justMyCode": true,
@@ -74,12 +74,12 @@
       "name": "Python: repro.py",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/repro.py",
       "console": "integratedTerminal",
       "justMyCode": true,
       "env": {
-        "PYTHONPATH":"/Users/birch/git/iree-build-with-assertions/compiler/bindings/python:/Users/birch/git/iree-build-with-assertions/runtime/bindings/python",
+        // "PYTHONPATH":"/Users/birch/git/iree-build-with-assertions/compiler/bindings/python:/Users/birch/git/iree-build-with-assertions/runtime/bindings/python",
         // "PATH": "/Users/birch/git/mlir-hlo/llvm-build/bin:/Users/birch/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Library/Apple/usr/bin:/Users/birch/anaconda3/envs/torch-nightly/bin:/Users/birch/anaconda3/condabin:/Users/birch/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/Applications/Sublime Text.app/Contents/SharedSupport/bin:/Users/birch/.npm-packages/bin"
       },
       "args": []
@@ -88,12 +88,12 @@
       "name": "Python: repro2.py",
       "type": "python",
       "request": "launch",
-      "python": "/Users/birch/anaconda3/envs/torch-nightly/bin/python",
+      "python": "${workspaceFolder}/backend/dalle/bin/python",
       "program": "${workspaceFolder}/backend/repro2.py",
       "console": "integratedTerminal",
       "justMyCode": true,
       "env": {
-        "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
+        // "PYTHONPATH":"/Users/birch/git/iree-build/compiler/bindings/python:/Users/birch/git/iree-build/runtime/bindings/python",
         "JAX_PLATFORMS":"iree,cpu",
         "JAX_IREE_BACKEND":"vulkan"
       },
